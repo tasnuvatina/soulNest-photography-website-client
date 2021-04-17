@@ -1,0 +1,38 @@
+.footer-main{
+    background-color: #e1d9cf;
+}
+.social-media-icons{
+    font-size: 1.5rem;
+    color:#2f2f2d;
+}
+
+.social-media-icons:hover{
+    color: #736A6A;
+}
+.email-btn-style{
+    background-color: #fff;
+    border:1px solid #2f2f2d;
+    padding: 5px 10px;
+}
+.email-btn-style:hover{
+    background-color: #2f2f2d;
+    border:1px solid #2f2f2d;
+    
+    color: #fff;
+}
+
+.footer-symbol{
+    width:120px;
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* .image{
+    animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */

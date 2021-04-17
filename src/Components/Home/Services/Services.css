@@ -1,0 +1,8 @@
+.service-card{
+    border: 2px solid #e1d9cf;
+    margin: 10px 5px;
+    padding: 15px; 
+}
+.card-img{
+    width: 100px;
+}

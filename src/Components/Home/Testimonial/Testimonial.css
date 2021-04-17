@@ -1,0 +1,9 @@
+.testimonial-card{
+    border: 2px solid #e1d9cf;
+    padding: 15px 10px;
+}
+.tesimonial-pic{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}

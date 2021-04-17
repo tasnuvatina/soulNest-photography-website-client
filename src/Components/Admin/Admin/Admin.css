@@ -1,0 +1,10 @@
+.sidebar-main{
+    background-color: #e1d9cf;
+    height: 100vh;
+}
+.sidebar-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 30px;
+}

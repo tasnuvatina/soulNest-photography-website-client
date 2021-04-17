@@ -1,0 +1,22 @@
+.booking-card{
+    box-shadow: 10px 10px 10px lightGray;
+}
+
+.pending{
+    border:0px;
+    padding: 5px 10px;
+    background-color: rgb(253, 208, 216);
+    color:rgb(255, 28, 66)
+}
+.done{
+    border:0px;
+    padding: 5px 10px;
+    background-color: rgb(167, 255, 167);
+    color:rgb(1, 146, 1)
+}
+.on-going{
+    border:0px;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 157);
+    color:rgb(161, 161, 18)
+}

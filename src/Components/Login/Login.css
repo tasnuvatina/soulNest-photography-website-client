@@ -1,0 +1,17 @@
+.login-form{
+    border: 1px solid lightGray;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+}
+.googleIcon{
+    width: 25px;
+}
+.login-btn{
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.login-btn:hover{
+    background-color: #e1d9cf;
+}

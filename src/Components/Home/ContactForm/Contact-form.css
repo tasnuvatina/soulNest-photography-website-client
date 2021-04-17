@@ -1,0 +1,15 @@
+.contact-main {
+background: url("../../../images/Untitled-design.png");
+background-size:contain;
+background-position:top right;
+background: cover;
+background-repeat: no-repeat;
+
+}
+
+.form-input{
+    padding: 5px;
+    border:0px;
+    border-bottom: 1px solid gray;
+
+}

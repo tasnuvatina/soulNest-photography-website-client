@@ -1,0 +1,66 @@
+.home-carousal-div {
+    width: 100%
+}
+
+
+.dark-text{
+    color:#2f2f2d;
+    
+}
+.lobster-text{
+    font-family: 'Great Vibes', cursive;
+}
+.btn-style{
+    background-color: #fff;
+    border:1px solid #2f2f2d;
+    padding: 10px 10px;
+}
+.btn-style:hover{
+    background-color: #2f2f2d;
+    border:1px solid #2f2f2d;
+    padding: 10px 10px;
+    color: #fff;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel-img {
+        height: 250px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .carousel-img {
+        height: 300px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carousel-img {
+        height: 350px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carousel-img {
+        height: 500px;
+    }
+    .caption{
+        bottom:150px;
+        
+    }
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .carousel-img {
+        height: 600px;
+    }
+    .caption{
+        bottom:150px;
+        
+    }
+}
