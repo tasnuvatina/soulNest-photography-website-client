@@ -5,4 +5,14 @@
 }
 .card-img{
     width: 100px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+.service-card:hover .card-img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }

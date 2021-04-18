@@ -22,17 +22,17 @@ const User = () => {
       <div>
         <UserNavbar></UserNavbar>
         <div className="row w-100 ">
-          <div className="col-md-3">
+          <div className="col-lg-3 col-md-12">
           <div className='sidebar-main'>
             <div className='sidebar-div'>
-            <div className='my-2'><Link to={`/admin/orderList/${loggedInUser.email}`}><span><FontAwesomeIcon icon={faShoppingCart} /></span> Order List</Link></div>
-            <div className='my-2'><Link to={`/admin/addService/${loggedInUser.email}`}><span><FontAwesomeIcon icon={faShoppingBasket} /></span> Add Service</Link></div>
-            <div className='my-2'><Link to={`/admin/makeAdmin/${loggedInUser.email}`}><span><FontAwesomeIcon icon={faCommentAlt} /></span> Make Admin</Link></div>
-            <div className='my-2'><Link to={`/admin/manageService/${loggedInUser.email}`}><span><FontAwesomeIcon icon={faCommentAlt} /></span> Manage Service</Link></div>
+            <div className='my-2'><Link to={`/admin/orderList/${loggedInUser.email}`} className='sidebar-link'><span><FontAwesomeIcon icon={faShoppingCart} /></span> Order List</Link></div>
+            <div className='my-2'><Link to={`/admin/addService/${loggedInUser.email}`} className='sidebar-link'><span><FontAwesomeIcon icon={faShoppingBasket} /></span> Add Service</Link></div>
+            <div className='my-2'><Link to={`/admin/makeAdmin/${loggedInUser.email}`} className='sidebar-link'><span><FontAwesomeIcon icon={faCommentAlt} /></span> Make Admin</Link></div>
+            <div className='my-2'><Link to={`/admin/manageService/${loggedInUser.email}`} className='sidebar-link'><span><FontAwesomeIcon icon={faCommentAlt} /></span> Manage Service</Link></div>
             </div>
         </div>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-12 col-lg-9">
           <div>
           {adminTask === "orderList" && <OrderList></OrderList>}
         </div>

@@ -23,16 +23,16 @@ const User = () => {
       <div>
         <UserNavbar></UserNavbar>
         <div className="row w-100 ">
-          <div className="col-md-3">
+          <div className="col-lg-3 col-md-12">
           <div className='sidebar-main'>
-            <div className='sidebar-div'>
-            <div className='my-2'><Link to={`/user/booking/${id}`}><span><FontAwesomeIcon icon={faShoppingCart} /></span> Booking</Link></div>
-            <div className='my-2'><Link to={`/user/bookingList/${loggedInUser.email}`}><span><FontAwesomeIcon icon={faShoppingBasket} /></span> Booking List</Link></div>
-            <div className='my-2'><Link to={`/user/review/${loggedInUser.email}`}><span><FontAwesomeIcon icon={faCommentAlt} /></span> Review</Link></div>
+            <div className='sidebar-div-user'>
+            <div className='my-2'><Link to={`/user/booking/${id}`} className='sidebar-link'><span><FontAwesomeIcon icon={faShoppingCart} /></span> Booking</Link></div>
+            <div className='my-2'><Link to={`/user/bookingList/${loggedInUser.email}`} className='sidebar-link'><span><FontAwesomeIcon icon={faShoppingBasket} /></span> Booking List</Link></div>
+            <div className='my-2'><Link to={`/user/review/${loggedInUser.email}`} className='sidebar-link'><span><FontAwesomeIcon icon={faCommentAlt} /></span> Review</Link></div>
             </div>
         </div>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-12 col-lg-9">
           <div>
           {task === "booking" && <Booking id={id}></Booking>}
         </div>

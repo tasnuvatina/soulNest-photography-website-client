@@ -22,7 +22,7 @@ const Services = () => {
       </p>
       <div className="row w-100 text-center my-5 mx-0">
         {services.map((service) => (
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="service-card">
             <div><img className='card-img' src={service.imageURL} alt=""/></div>
               <h4 className="my-3 cormorant-font">{(service.name).toUpperCase()}</h4>

@@ -9,6 +9,8 @@ import { userContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
 import './Login.css'
 import googleIcon from '../../images/Group 573.png'
+import logo from '../../images/logo.png'
+import { Link } from "react-router-dom";
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
@@ -63,12 +65,15 @@ const Login = () => {
   return (
     <div>
       <Container
-        className="d-flex align-items-center justify-content-center"
+        className="d-flex align-items-center justify-content-center mulish-font"
         style={{ minHeight: "100vh" }}
+      
       >
+      
         <div style={{ maxWidth: "400px" }} className='login-form'>
-        <h2 className='mb-4'>Login with</h2>
-          <button className='login-btn' onClick={handleGoogleSignIn}><img className='googleIcon' src={googleIcon} alt=""/> Sign in with google</button>
+        <div><Link to='/'><img src={logo} alt=""/></Link></div>
+        <h2 className='mb-4 cormorant-font'>Login with</h2>
+          <button className='login-btn' onClick={handleGoogleSignIn}><img className='googleIcon' src={googleIcon} alt=""/> Log In with google</button>
         </div>
       </Container>
     </div>

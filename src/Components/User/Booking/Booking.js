@@ -17,8 +17,7 @@ const Booking = ({id}) => {
     loggedInUser,
     setLoggedInUser,
     isUserLoggedIn,
-    setIsUserLoggedIn,newService,
-    setNewService
+    setIsUserLoggedIn
   } = useContext(userContext);
   const {
     register,
@@ -28,12 +27,16 @@ const Booking = ({id}) => {
   const onSubmit = (data) => console.log(data);
   return (
     <div className='container mulish-font'>
-        <h3 className='text-center mb-4 cormorant-font'>MAKE A BOOKING</h3>
+        {
+          service.name ? <div><h3 className='text-center mb-4 cormorant-font'>MAKE A BOOKING</h3>
         <input className='form-control my-3' value={loggedInUser.name} />
         <input className='form-control my-3' value={loggedInUser.email} />
         <input className='form-control my-3' value={service.name} />
+        <p>This service will cost   ${service.price}</p>
         <h5>Payment:</h5>
-        <ProcessPayment service={service}></ProcessPayment>
+        <ProcessPayment service={service}></ProcessPayment></div>
+        : <div className='text-center'> <h5>Please Select a Service First !!</h5></div>
+        }
         
       
       

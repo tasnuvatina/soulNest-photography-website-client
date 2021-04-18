@@ -15,7 +15,7 @@ const Testimonial = () => {
       <h2 className='text-dark text-center  mb-5 cormorant-font'>TESTIMONIALS</h2>
         <div className='row w-100 text-center mx-0 '>
             {
-                testimonials.map(testimonial=><div className='col-md-4'><div className='testimonial-card'>
+                testimonials.map(testimonial=><div className='col-lg-4 col-md-6 col-sm-12 mb-3'><div className='testimonial-card'>
                 <div><img className='tesimonial-pic' src={testimonial.pic} alt=""/></div>
                 <h2 className='text-dark lobster-text my-3'><span>{testimonial.brideName}</span> & <span>{testimonial.groomName}</span></h2>
                 <p className='mulish-font'>{testimonial.description}</p>

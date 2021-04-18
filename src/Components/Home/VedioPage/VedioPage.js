@@ -9,10 +9,9 @@ const VedioPage = () => {
         LIVE YOUR MAGIC AND SAVE YOUR PRECIOUS LOVE MEMORIES! OUR TEAM OF
         PROFESSIONAL PHOTOGRAPHERS IS HERE TO HELP YOU.
       </h5>
-      <div className='container mt-5'>
+      <div className='container mt-5 text-center'>
       <iframe
-      width='100%'
-      height='500px'
+      className='vedio-div'
       src="https://www.youtube.com/embed/PWbSLgZWBhU"
     ></iframe>
       </div>
