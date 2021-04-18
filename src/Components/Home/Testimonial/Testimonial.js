@@ -5,7 +5,7 @@ import './Testimonial.css'
 const Testimonial = () => {
     let [testimonials,setTestimonials]=useState([]);
     useEffect(()=>{
-        let url='http://localhost:5000/getAllReviews'
+        let url='https://limitless-peak-51272.herokuapp.com/getAllReviews'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setTestimonials(data))

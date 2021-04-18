@@ -30,7 +30,7 @@ const CheckoutForm = ({service}) => {
       console.log('[error]', error);
     } else {
       let booking={...loggedInUser, cardId:paymentMethod.id,cardInfo:paymentMethod.card,serviceName:service.name,servicePrice:service.price,serviceImage:service.imageURL,serviceDescription:service.description,status:'Pending'}
-      fetch('http://localhost:5000/addBooking',{
+      fetch('https://limitless-peak-51272.herokuapp.com/addBooking',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

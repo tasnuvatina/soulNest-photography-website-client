@@ -34,7 +34,7 @@ const Navbar = () => {
    
     const CheckAdmin=()=>{
       useEffect(()=>{
-        let url=`http://localhost:5000/getAdmin/${loggedInUser.email}`
+        let url=`https://limitless-peak-51272.herokuapp.com/getAdmin/${loggedInUser.email}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setIsAdmin(data))
@@ -56,7 +56,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/home"
+                to="/"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}

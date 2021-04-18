@@ -1,6 +1,7 @@
 .sidebar-main{
     background-color: #e1d9cf;
     height: 100vh;
+    
 }
 .sidebar-div-user{
     display: grid;
@@ -27,6 +28,7 @@
     .sidebar-main{
         height: 200px;
         margin-bottom: 20px;
+        
     }
     .sidebar-div-user{
         display: grid;
@@ -54,7 +56,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .sidebar-main{
         height: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
     }
     .sidebar-div-user{
         display: grid;

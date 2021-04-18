@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 const OrderList = () => {
   let [orders, setOrders] = useState([]);
   useEffect(() => {
-    let url = "http://localhost:5000/getAllBooking";
+    let url = "https://limitless-peak-51272.herokuapp.com/getAllBooking";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [orders]);
   const handleSelect=(id,e)=>{
-      let url=`http://localhost:5000/updateBookingStatus/${id}`
+      let url=`https://limitless-peak-51272.herokuapp.com/updateBookingStatus/${id}`
       fetch(url,{
           method:'PATCH',
           headers:{

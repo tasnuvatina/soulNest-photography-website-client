@@ -8,7 +8,7 @@ const Booking = ({id}) => {
   console.log(id);
   let [service,setService]=useState({});
   useEffect(()=>{
-    let url=`http://localhost:5000/singleService/${id}`
+    let url=`https://limitless-peak-51272.herokuapp.com/singleService/${id}`
     fetch(url)
     .then(res=>res.json())
     .then(data=>setService(data))

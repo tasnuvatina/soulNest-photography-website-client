@@ -22,7 +22,7 @@ const Review = () => {
     }
     const onSubmit = data => {
         let newReview={...data,pic:imageURL}
-        let url='http://localhost:5000/addReview'
+        let url='https://limitless-peak-51272.herokuapp.com/addReview'
         fetch(url,{
             method: "POST",
             headers: {

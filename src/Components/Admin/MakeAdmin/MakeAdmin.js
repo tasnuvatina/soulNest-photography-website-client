@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) =>{
-      let url ='http://localhost:5000/addAdmin'
+      let url ='https://limitless-peak-51272.herokuapp.com/addAdmin'
       fetch(url,{
         method: "POST",
         headers: {

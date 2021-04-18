@@ -10,19 +10,19 @@ const ManageService = () => {
   let [services, setServices] = useState([]);
   let [serviceToUpdate,setServiceToUpdate]=useState({})
   useEffect(() => {
-    let url = "http://localhost:5000/services";
+    let url = "https://limitless-peak-51272.herokuapp.com/services";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [services]);
   const handleLoad=(id)=>{
-      let url=`http://localhost:5000/singleService/${id}`
+      let url=`https://limitless-peak-51272.herokuapp.com/singleService/${id}`
       fetch(url)
       .then((res)=>res.json())
       .then(data=>setServiceToUpdate(data))
   }
   const handleDelete=(id)=>{
-    let url=`http://localhost:5000/deleteService/${id}`
+    let url=`https://limitless-peak-51272.herokuapp.com/deleteService/${id}`
     fetch(url,{
         method:'DELETE'
     })
@@ -37,7 +37,7 @@ const handleUpdate = (id) => {
   let price = priceRef.current.value;
   let description = descriptionRef.current.value;
   let updatedService = { id, name, price, description };
-  let url = `http://localhost:5000/updateService/${id}`;
+  let url = `https://limitless-peak-51272.herokuapp.com/updateService/${id}`;
   fetch(url, {
     method: "PATCH",
     headers: {

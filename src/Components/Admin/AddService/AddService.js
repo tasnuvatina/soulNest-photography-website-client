@@ -30,7 +30,7 @@ const AddService = () => {
       description: data.description,
       imageURL: imageURL,
     };
-    const url = "http://localhost:5000/addService";
+    const url = "https://limitless-peak-51272.herokuapp.com/addService";
     fetch(url, {
       method: "POST",
       headers: {

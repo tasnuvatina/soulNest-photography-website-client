@@ -6,7 +6,7 @@ import "./Services.css";
 const Services = () => {
   let [services,setServices]=useState([]);
   useEffect(()=>{
-    let url='http://localhost:5000/services';
+    let url='https://limitless-peak-51272.herokuapp.com/services';
     fetch(url)
     .then(res=>res.json())
     .then(data=>{

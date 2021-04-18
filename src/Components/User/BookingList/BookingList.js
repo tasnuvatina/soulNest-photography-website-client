@@ -4,7 +4,7 @@ import './BookingList.css'
 const BookingList = ({ email }) => {
   let [bookings, setBookings] = useState([]);
   useEffect(() => {
-    let url = `http://localhost:5000/getBookings/${email}`;
+    let url = `https://limitless-peak-51272.herokuapp.com/getBookings/${email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setBookings(data));
